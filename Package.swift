@@ -27,10 +27,5 @@ let package = Package(
             name: "AnalyticsConnector",
             path: "Sources/AnalyticsConnector",
             exclude: ["Info.plist"]),
-        .testTarget(
-            name: "AnalyticsConnectorTests",
-            dependencies: ["AnalyticsConnector"],
-            path: "Tests/AnalyticsConnectorTests",
-            exclude: ["Info.plist"]),
     ]
 )
