@@ -1,4 +1,4 @@
-analytics_connector_version = "1.0.3" # Version is managed automatically by semantic-release, please dont change it manually
+analytics_connector_version = "1.3.1" # Version is managed automatically by semantic-release, please dont change it manually
 
 Pod::Spec.new do |spec|
 
@@ -23,6 +23,9 @@ Pod::Spec.new do |spec|
   
   spec.watchos.deployment_target = '3.0'
   spec.watchos.source_files      = 'sources/AnalyticsConnector/**/*.{h,swift}'
+
+  spec.visionos.deployment_target = '1.0'
+  spec.visionos.source_files      = 'sources/AnalyticsConnector/**/*.{h,swift}'
 
   spec.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
 
